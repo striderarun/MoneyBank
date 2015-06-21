@@ -1,0 +1,37 @@
+CREATE TABLE Users
+(
+userId INTEGER,
+userName VARCHAR(20),
+password VARCHAR(20),
+accountNumber INTEGER,
+balance INTEGER,
+PRIMARY KEY (userId)
+);
+
+INSERT INTO Users VALUES (1,'arun','123',123456789,50000);
+INSERT INTO Users VALUES (2,'avinash','123',123,50000);
+INSERT INTO Users VALUES (3,'pavneet','123',456,50000);
+
+
+CREATE TABLE Transactions
+(
+transactionId INTEGER,
+accountNumber INTEGER,
+userName VARCHAR(20),
+transactionRemarks VARCHAR(20),
+transactionType VARCHAR(20),
+transactionAmount INTEGER,
+PRIMARY KEY (transactionId),
+);
+
+insert into Transactions values (1,123456789,'arun','Shopping','Dr',5000)
+insert into Transactions values (2,123456789,'arun','Flipkart','Dr',5000)
+insert into Transactions values (3,123456789,'arun','Myntra','Dr',5000)
+insert into Transactions values (4,123456789,'arun','Jabong','Dr',5000)
+insert into Transactions values (5,123456789,'arun','Vodafone','Dr',5000)
+
+insert into Transactions values (6,456,'pavneet','Shopping','Dr',5000)
+insert into Transactions values (7,456,'pavneet','Flipkart','Dr',5000)
+insert into Transactions values (8,456,'pavneet','Myntra','Dr',5000)
+insert into Transactions values (9,456,'pavneet','Jabong','Dr',5000)
+insert into Transactions values (10,456,'pavneet','Vodafone','Dr',5000)
